@@ -28,5 +28,18 @@ class LinkedList
 
         Console.WriteLine(" inserted into the linked list" + node.data);
     }
+    public void Display()
+    {
+            Node temp = head;
+            if (temp == null)
+            {
+                Console.WriteLine("Linked List is Emplty");
+            }
+            while (temp != null)
+            {
+                Console.Write(temp.data + " ");
+                temp = temp.next;
+            }
+        }
 }
   
