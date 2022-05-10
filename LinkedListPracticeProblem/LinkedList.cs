@@ -28,6 +28,7 @@ class LinkedList
 
         Console.WriteLine(" inserted into the linked list" + node.data);
     }
+
     public void Display()
     {
             Node temp = head;

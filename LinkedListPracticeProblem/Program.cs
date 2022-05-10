@@ -13,11 +13,9 @@ switch (Option)
         list.Add(56);
         list.Add(30);
         list.Add(70);
-        list.Display();
-        break;
+        list.Display(); 
 
-     
-   
+        break;
     default:
         Console.WriteLine("Enter proper Option to Execute");
         break;
