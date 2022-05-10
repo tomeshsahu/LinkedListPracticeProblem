@@ -4,17 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkedListPracticeProblem
-{
-    internal class Node
-    {
-        public int data;
-        public Node next;
-        public Node(int data)
-        {
-            this.data = data;
-        }
+namespace LinkedListPracticeProblem;
 
-      
+public class Node
+{
+    public int data;
+    public Node next;
+    public Node(int data)
+    {
+        this.data = data;
     }
 }
