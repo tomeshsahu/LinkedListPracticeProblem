@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using LinkedListPracticeProblem;
 
 Console.WriteLine("Welcome Linklist Practice Problem");
-Console.WriteLine("1. UC1-CrateLInkList\n2. UC2-Append LinkLis\n3. UC3-Insert Between ");
+Console.WriteLine("1. UC1-CrateLInkList\n2. UC2-Append LinkLis\n3. UC3-Insert Between\n4. UC4- DeleteFirstElement");
 Console.WriteLine("Take an option to execute");
 int Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
@@ -32,6 +32,13 @@ switch (Option)
         list2.Display();
         break;
 
+    case 4:
+        UC4DeleteFirstElement list3 = new UC4DeleteFirstElement();
+        Console.WriteLine("Enter the position of the Element");
+        int index = Convert.ToInt32(Console.ReadLine());
+        list3.DeleteNodeAtPerticularPosition(index);
+        list3.Display();
+        break;
 
     default:
         Console.WriteLine("Enter proper Option to Execute");
