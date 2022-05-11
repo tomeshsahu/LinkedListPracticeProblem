@@ -7,7 +7,7 @@ bool check = true;
 while (check)
 {
     Console.WriteLine("Welcome Linklist Practice Problem");
-    Console.WriteLine("1. UC1-CrateLInkList\n2. UC2-Append LinkLis\n3. UC3-Insert Between\n4. UC4- DeleteFirstElement\n5. UC5- DeleteLastElement\n6. UC6-SearchLinkedList\n7. UC7-AddnumberAfterElement");
+    Console.WriteLine("1. UC1-CrateLInkList\n2. UC2-Append LinkLis\n3. UC3-Insert Between\n4. UC4- DeleteFirstElement\n5. UC5- DeleteLastElement\n6. UC6-SearchLinkedList\n7. UC7-AddnumberAfterElement\n8. UC8-DeleteParticularElementOfLinkedList");
     Console.WriteLine("Take an option to execute");
     int Option = Convert.ToInt32(Console.ReadLine());
     switch (Option)
@@ -65,6 +65,16 @@ while (check)
             int b = list6.Search(30);
             list6.InsertAtPerticularPosition(b + 1, 40);
             list6.Display();
+            break;
+
+        case 8:
+            UC8DeleteParticularElementOfLinkedList list7 = new UC8DeleteParticularElementOfLinkedList();
+            int search = list7.Search(40);
+            list7.LinkedListSize();
+            list7.Display();
+            list7.DeleteNodeAtPerticularPosition(search);
+            list7.LinkedListSize();
+            list7.Display();
             break;
 
         case 0:
